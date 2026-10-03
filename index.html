@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORAVEL — Pure Organic Apple Juice</title>
+  <meta name="description" content="An organic, cinematic, scroll-driven Apple Juice film experience by ORAVEL." />
+  
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Italiana&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Cinematic Atmosphere (Organic Deep Green & Apple Gold Glow) -->
+  <div class="ambient-glow" id="ambientGlow"></div>
+  <div class="ambient-film-grain"></div>
+
+  <!-- Opening Cinematic Intro Backdrop (Clean White / Cinematic Screen that smoothly dissolves) -->
+  <div class="intro-backdrop" id="introBackdrop"></div>
+
+  <!-- 1. ORAVEL LOGO INTRO LAYER (Exact logo -(1).png image) -->
+  <div class="logo-intro-layer" id="logoIntroLayer">
+    <div class="oravel-brand-wrapper" id="oravelBrandWrapper">
+      <!-- Primary Brand Logo Asset using exact logo -(1).png image -->
+      <div class="oravel-logo-figure" id="oravelLogoFigure">
+        <img 
+          src="logo -(1).png" 
+          alt="ORAVEL" 
+          id="oravelLogoImg" 
+          class="oravel-logo-img"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- Persistent Site Header (Balanced layout: Logo on left, Navigation spaced toward the right) -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-brand-placeholder" id="headerBrandPlaceholder">
+      <!-- Target position where the logo settles -->
+    </div>
+    
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-item active" data-target="home">HOME</a>
+      <a href="#story" class="nav-item" data-target="story">STORY</a>
+      <a href="#features" class="nav-item" data-target="features">FEATURES</a>
+      <a href="#about" class="nav-item" data-target="about">ABOUT</a>
+      <a href="#contact" class="nav-item" data-target="contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- =========================================================
+       1. HOME SECTION: STICKY FULL-SCREEN VIDEO & CANVAS STAGE
+       (100% LOCKED AND PRESERVED FOR HOME ONLY)
+       ========================================================= -->
+  <div class="video-container" id="videoContainer">
+    <video 
+      id="juiceVideo" 
+      src="apple juice website.mp4" 
+      preload="auto" 
+      muted 
+      playsinline 
+      disablepictureinpicture 
+      disableremoteplayback 
+      crossorigin="anonymous"
+    ></video>
+    <canvas id="videoCanvas"></canvas>
+    <div class="cinematic-overlay" id="cinematicOverlay"></div>
+    <div class="cinematic-gradient-fade" id="cinematicGradientFade"></div>
+    <div class="home-exit-fade" id="homeExitFade"></div>
+  </div>
+
+  <!-- HOME EDITORIAL OVERLAY STAGE (Directly integrated into video scene) -->
+  <div class="scene-overlay-stage" id="sceneOverlayStage">
+
+    <!-- HOME HERO: Editorial Typography in Video Scene -->
+    <div class="scene-node hero-node" id="heroNode">
+      <div class="editorial-eyebrow">ORAVEL ORCHARD RESERVE</div>
+      <h1 class="hero-display-title">PREMIUM<br>APPLE JUICE</h1>
+      <div class="editorial-rule"></div>
+      <p class="hero-supporting-text">
+        Naturally fresh. Naturally refreshing. Pure sun-ripened orchard harvest captured without heat or compromise.
+      </p>
+      <div class="hero-meta-badge">
+        <span>SINGLE ORCHARD ORIGIN</span>
+        <span class="sep">•</span>
+        <span>COLD PRESSED</span>
+      </div>
+    </div>
+
+    <!-- FEATURE 01: FRESH (Follows 1st Video Movement — Positioned on the RIGHT Side) -->
+    <div class="scene-node feature-node feature-node-right feature-stage-1" id="featureNode1">
+      <div class="feature-editorial">
+        <div class="feature-idx">01</div>
+        <div class="feature-sub">HARVEST AT DAWN</div>
+        <h2 class="feature-heading">FRESH</h2>
+        <div class="editorial-rule"></div>
+        <p class="feature-lead">
+          Naturally refreshing. Crisp mountain apples plucked at the precise moment of sugar-acid equilibrium.
+        </p>
+        <div class="feature-notes">
+          <span>100% ORCHARD GROWN</span>
+          <span class="sep">•</span>
+          <span>ZERO ADDED SUGAR</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURE 02: NATURAL (Follows 2nd Video Movement — Smoothly moves to the LEFT Side) -->
+    <div class="scene-node feature-node feature-node-left feature-stage-2" id="featureNode2">
+      <div class="feature-editorial">
+        <div class="feature-idx">02</div>
+        <div class="feature-sub">GENTLE COLD PRESS</div>
+        <h2 class="feature-heading">NATURAL</h2>
+        <div class="editorial-rule"></div>
+        <p class="feature-lead">
+          Made with real apple goodness. Slow swirl extraction under inert nitrogen preserves every living botanical aroma and vital active enzyme.
+        </p>
+        <div class="feature-notes">
+          <span>UNPASTEURIZED COLD BLEND</span>
+          <span class="sep">•</span>
+          <span>RAW NUTRIENTS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURE 03: PURE APPLE (Follows 3rd Video Movement — Seamlessly Composed on the RIGHT Side) -->
+    <div class="scene-node feature-node feature-node-right feature-stage-3" id="featureNode3">
+      <div class="feature-editorial">
+        <div class="feature-idx">03</div>
+        <div class="feature-sub">ORGANIC HARMONY</div>
+        <h2 class="feature-heading">PURE APPLE</h2>
+        <div class="editorial-rule"></div>
+        <p class="feature-lead">
+          The finished amber elixir. Crystal clarity meets crisp artisanal intensity in an immortal glass silhouette.
+        </p>
+        <div class="feature-notes">
+          <span>ORAVEL SIGNATURE</span>
+          <span class="sep">•</span>
+          <span>RECYCLED FLINT GLASS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle Cinematic Scroll Indicator -->
+    <div class="scroll-cue" id="scrollCue">
+      <div class="cue-mouse">
+        <div class="cue-dot"></div>
+      </div>
+      <span class="cue-text">SCROLL TO EXPERIENCE</span>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       GLOBAL CINEMATIC VIDEO BACKGROUND LAYER (Persistent for Internal Pages)
+       Single continuous 100vw x 100vh full-screen background
+       ========================================================= -->
+  <div class="global-cinematic-bg" id="globalCinematicBg" aria-hidden="true">
+    <video 
+      class="cinematic-bg-video video-primary"
+      id="globalVideoPrimary"
+      src="public/videos/apple-drink-commercial.mp4" 
+      autoplay 
+      muted 
+      loop
+      playsinline
+      preload="auto"
+      style="opacity: 1;"
+    ></video>
+    <video 
+      class="cinematic-bg-video video-secondary"
+      id="globalVideoSecondary"
+      src="public/videos/product-background.mp4" 
+      muted 
+      loop
+      playsinline
+      preload="auto"
+      style="opacity: 0;"
+    ></video>
+    <div class="cinematic-bg-overlay"></div>
+  </div>
+
+  <!-- =========================================================
+       GLOBAL 3D PRODUCT VIEWPORT (Persistent 3D Hero for Story, Features, About, Contact)
+       Seamlessly controlled in real-time across scroll progress
+       ========================================================= -->
+  <div class="global-3d-viewport" id="global3dViewport" aria-hidden="true">
+    <div class="product-3d-wrapper" id="product3dWrapper">
+      <div class="product-3d" id="product3d">
+        <div class="product-glow" id="productGlow"></div>
+        <div class="product-shadow" id="productShadow"></div>
+        <img 
+          src="bottle(1).png" 
+          alt="ORAVEL Natural Apple Drink Bottle" 
+          class="product-bottle-img"
+          id="productBottleImg"
+        />
+        <div class="product-reflection" id="productReflection"></div>
+      </div>
+    </div>
+
+    <!-- Floating 3D Orchard Parallax Particles -->
+    <div class="floating-orchard-layer" id="floatingOrchardLayer">
+      <div class="floating-item leaf-1" id="leaf1">
+        <img src="apple-leaf-floating.png" alt="Apple Leaf" />
+      </div>
+      <div class="floating-item leaf-2" id="leaf2">
+        <img src="apple-leaf-floating.png" alt="Apple Leaf" />
+      </div>
+      <div class="floating-item leaf-3" id="leaf3">
+        <img src="apple-leaf-floating.png" alt="Apple Leaf" />
+      </div>
+      <div class="floating-item light-bokeh bokeh-1" id="bokeh1"></div>
+      <div class="floating-item light-bokeh bokeh-2" id="bokeh2"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       SCROLLABLE PAGE CONTENT FLOW
+       ========================================================= -->
+  <main class="page-content-flow" id="pageFlow">
+    
+    <!-- HOME SECTION SCROLL TRACK (Mapped directly to the 3-stage video scrub) -->
+    <div class="video-scrub-space" id="home"></div>
+
+    <!-- =========================================================
+         2. STORY — REAL 3D PRODUCT SCROLL EXPERIENCE
+         4 Distinct Scenes driven by physical 3D transforms & depth
+         ========================================================= -->
+    <section class="cinematic-track-section" id="story" data-track="story">
+      
+      <div class="cinematic-sticky-stage">
+
+        <!-- Story Atmosphere & 3D Ambient Visuals -->
+        <div class="inner-atmosphere-layer">
+          <div class="ambient-visual-circle orb-green" id="storyOrb1"></div>
+          <div class="ambient-visual-circle orb-gold" id="storyOrb2"></div>
+          <div class="cinematic-depth-grid"></div>
+        </div>
+
+        <!-- Track Progress Indicator -->
+        <div class="scene-progress-nav" id="storyProgress">
+          <div class="progress-bar-rail"><div class="progress-bar-fill"></div></div>
+          <span class="progress-label">STORY SCENE <span class="current-scene-idx">01</span> / 04</span>
+        </div>
+
+        <!-- 3D Story Scenes Typography & Editorial Composition -->
+        <div class="scenes-3d-wrapper" id="storyScenes">
+
+          <!-- SCENE 01: OUR STORY (Bottle LEFT -> Content RIGHT) -->
+          <article class="cinematic-scene-card active" data-scene="0">
+            <div class="scene-content-box story-align-right">
+              <div class="scene-eyebrow">OUR STORY</div>
+              <h2 class="scene-headline">
+                From nature,<br>
+                <span>to every drop.</span>
+              </h2>
+              <div class="editorial-rule-right"></div>
+              <p class="scene-lead">
+                At ORAVEL, we don't manufacture juice—we preserve moments of harvest. Cultivated in high-altitude orchards where crisp alpine air and volcanic soil yield apples of unrivaled purity.
+              </p>
+              <div class="scene-meta-badges">
+                <span class="meta-tag">1,200M HIGH ALTITUDE</span>
+                <span class="meta-dot">•</span>
+                <span class="meta-tag">SINGLE ORCHARD ORIGIN</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- SCENE 02: FROM THE ORCHARD (Bottle RIGHT -> Content LEFT) -->
+          <article class="cinematic-scene-card" data-scene="1">
+            <div class="scene-content-box story-align-left">
+              <div class="scene-idx-huge">01</div>
+              <div class="scene-eyebrow">THE HARVEST</div>
+              <h2 class="scene-headline">FROM THE<br>ORCHARD</h2>
+              <div class="editorial-rule-left"></div>
+              <p class="scene-lead-emphasis">
+                Pure alpine character, gathered at morning dew.
+              </p>
+              <p class="scene-body">
+                Selected from heirloom alpine varieties, every apple is hand-harvested at dawn when night frost yields to morning sun—locking in peak crispness and natural floral aromatics.
+              </p>
+              <div class="scene-metrics-row-left">
+                <div class="metric-card">
+                  <span class="metric-num">100%</span>
+                  <span class="metric-txt">Heirloom Varietals</span>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-num">Dawn</span>
+                  <span class="metric-txt">Dew-Point Harvest</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- SCENE 03: THE CRAFT (Bottle LEFT -> Content RIGHT) -->
+          <article class="cinematic-scene-card" data-scene="2">
+            <div class="scene-content-box story-align-right">
+              <div class="scene-idx-huge">02</div>
+              <div class="scene-eyebrow">COLD EXTRACTION</div>
+              <h2 class="scene-headline">THE CRAFT</h2>
+              <div class="editorial-rule-right"></div>
+              <p class="scene-lead-emphasis">
+                Zero heat. Zero oxidation. Zero compromise.
+              </p>
+              <p class="scene-body">
+                Within four hours of gathering, whole fruit enters our inert nitrogen press chamber. Without thermal degradation, we gently release amber nectar while shielding living enzymes and raw antioxidants.
+              </p>
+              <div class="scene-metrics-row-right">
+                <div class="metric-card">
+                  <span class="metric-num">4 Hours</span>
+                  <span class="metric-txt">Tree To Bottle</span>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-num">0%</span>
+                  <span class="metric-txt">Thermal Heat</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- SCENE 04: PURE IN EVERY DROP (Bottle RIGHT -> Content LEFT) -->
+          <article class="cinematic-scene-card" data-scene="3">
+            <div class="scene-content-box story-align-left">
+              <div class="scene-idx-huge">03</div>
+              <div class="scene-eyebrow">SENSORY PURITY</div>
+              <h2 class="scene-headline">PURE IN<br><span>EVERY DROP</span></h2>
+              <div class="editorial-rule-left"></div>
+              <p class="scene-lead-emphasis">
+                The living essence of single-orchard heritage.
+              </p>
+              <blockquote class="scene-quote-inline">
+                “A single sip captures the morning mist and golden sunlight of the alpine valley.”
+              </blockquote>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. FEATURES — 3D PRODUCT SHOWCASE
+         Scroll-Synchronized 3D Feature Animation
+         ========================================================= -->
+    <section class="cinematic-track-section" id="features" data-track="features">
+      
+      <div class="cinematic-sticky-stage">
+
+        <!-- Ambient Atmosphere Layer -->
+        <div class="inner-atmosphere-layer">
+          <div class="ambient-visual-circle orb-leaf" id="featureOrb1"></div>
+          <div class="ambient-visual-circle orb-amber" id="featureOrb2"></div>
+          <div class="cinematic-depth-grid features-grid"></div>
+        </div>
+
+        <!-- Track Progress Indicator -->
+        <div class="scene-progress-nav" id="featuresProgress">
+          <div class="progress-bar-rail"><div class="progress-bar-fill"></div></div>
+          <span class="progress-label">FEATURE <span class="current-scene-idx">01</span> / 04</span>
+        </div>
+
+        <!-- 3D Feature Scenes Container -->
+        <div class="scenes-3d-wrapper" id="featureScenes">
+
+          <!-- FEATURE 01: FRESH (Bottle LEFT -> Content RIGHT) -->
+          <article class="cinematic-scene-card active" data-scene="0">
+            <div class="scene-content-box feature-align-right">
+              <div class="feature-badge-3d">PURITY 01</div>
+              <div class="scene-idx-huge">01</div>
+              <h2 class="scene-headline">FRESH</h2>
+              <div class="editorial-rule-right"></div>
+              <p class="scene-lead-emphasis">Naturally refreshing.</p>
+              <p class="scene-body">
+                Crisp mountain apples plucked at the precise moment of sugar-acid equilibrium. Cold high-pressure extraction retains 99.4% of raw vitamins and pristine orchard aromatics.
+              </p>
+              <div class="feature-spec-pills-right">
+                <span>100% MOUNTAIN GROWN</span>
+                <span class="sep">•</span>
+                <span>ZERO ADDED SUGAR</span>
+                <span class="sep">•</span>
+                <span>RAW VITAMINS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FEATURE 02: NATURAL (Bottle RIGHT -> Content LEFT) -->
+          <article class="cinematic-scene-card" data-scene="1">
+            <div class="scene-content-box feature-align-left">
+              <div class="feature-badge-3d">PURITY 02</div>
+              <div class="scene-idx-huge">02</div>
+              <h2 class="scene-headline">NATURAL</h2>
+              <div class="editorial-rule-left"></div>
+              <p class="scene-lead-emphasis">Made with real apple goodness.</p>
+              <p class="scene-body">
+                Gentle silk filtration under inert nitrogen preserves living botanicals. Zero concentrates, zero preservatives, and zero artificial clarification agents.
+              </p>
+              <div class="feature-spec-pills-left">
+                <span>UNPASTEURIZED COLD BLEND</span>
+                <span class="sep">•</span>
+                <span>LIVING ENZYMES</span>
+                <span class="sep">•</span>
+                <span>100% PURE JUICE</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FEATURE 03: PURE (Bottle LEFT -> Content RIGHT) -->
+          <article class="cinematic-scene-card" data-scene="2">
+            <div class="scene-content-box feature-align-right">
+              <div class="feature-badge-3d">PURITY 03</div>
+              <div class="scene-idx-huge">03</div>
+              <h2 class="scene-headline">PURE</h2>
+              <div class="editorial-rule-right"></div>
+              <p class="scene-lead-emphasis">A crystal glass silhouette.</p>
+              <p class="scene-body">
+                Bottled in heavy, UV-shielded custom flint glass to lock in crispness and deliver a timeless tactile luxury sensation from first pour to the final drop.
+              </p>
+              <div class="feature-spec-pills-right">
+                <span>UV-SHIELDED FLINT GLASS</span>
+                <span class="sep">•</span>
+                <span>AIRTIGHT CROWN SEAL</span>
+                <span class="sep">•</span>
+                <span>CRYSTAL CLARITY</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FEATURE 04: QUALITY (Bottle RIGHT -> Content LEFT) -->
+          <article class="cinematic-scene-card" data-scene="3">
+            <div class="scene-content-box feature-align-left">
+              <div class="feature-badge-3d">PURITY 04</div>
+              <div class="scene-idx-huge">04</div>
+              <h2 class="scene-headline">QUALITY</h2>
+              <div class="editorial-rule-left"></div>
+              <p class="scene-lead-emphasis">Single orchard heritage reserve.</p>
+              <p class="scene-body">
+                The benchmark of alpine orchard craftsmanship. Every bottle is individually numbered, pomologist-verified, and held to the world's most rigorous purity standards.
+              </p>
+              <div class="feature-spec-pills-left">
+                <span>SINGLE ORCHARD RESERVE</span>
+                <span class="sep">•</span>
+                <span>INDIVIDUALLY NUMBERED</span>
+                <span class="sep">•</span>
+                <span>ORGANIC CERTIFIED</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. ABOUT — 3D BRAND & HERITAGE EXPERIENCE
+         ========================================================= -->
+    <section class="cinematic-track-section" id="about" data-track="about">
+      
+      <div class="cinematic-sticky-stage">
+
+        <!-- Ambient Atmosphere Layer -->
+        <div class="inner-atmosphere-layer">
+          <div class="ambient-visual-circle orb-gold" id="aboutOrb1"></div>
+          <div class="ambient-visual-circle orb-green" id="aboutOrb2"></div>
+        </div>
+
+        <div class="scenes-3d-wrapper" id="aboutScenes">
+          <!-- ABOUT (Bottle LEFT -> Content RIGHT) -->
+          <article class="cinematic-scene-card active" data-scene="0">
+            <div class="scene-content-box about-content-box about-align-right">
+              <div class="scene-eyebrow">ABOUT ORAVEL</div>
+              <h2 class="scene-headline">
+                CRAFTED AROUND<br>
+                <span>NATURE'S RHYTHM</span>
+              </h2>
+              <div class="editorial-rule-right"></div>
+              <p class="scene-lead-emphasis">
+                Sustainability and regenerative agriculture are our foundational philosophy.
+              </p>
+              <p class="scene-body">
+                Every discarded apple pomace from the cold pressing stage is returned directly to the orchard soil as nutrient-dense organic compost or gifted to local wild alpine bee sanctuaries.
+              </p>
+              <p class="scene-sub-body">
+                By working strictly in harmony with seasonal harvest cycles, ORAVEL preserves biodiversity and soil vitality across every acre of our ancestral alpine orchards.
+              </p>
+              
+              <div class="about-pillars-grid">
+                <div class="about-pillar">
+                  <span class="pillar-num">01</span>
+                  <span class="pillar-title">REGENERATIVE</span>
+                  <span class="pillar-desc">100% soil biomass loop back to orchards</span>
+                </div>
+                <div class="about-pillar">
+                  <span class="pillar-num">02</span>
+                  <span class="pillar-title">SOLAR POWERED</span>
+                  <span class="pillar-desc">Cold-press pressery runs entirely on clean energy</span>
+                </div>
+                <div class="about-pillar">
+                  <span class="pillar-num">03</span>
+                  <span class="pillar-title">BEE SANCTUARY</span>
+                  <span class="pillar-desc">Wild pollinator corridors across 40+ hectares</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. CONTACT — 3D FINAL PRODUCT SCENE
+         ========================================================= -->
+    <section class="cinematic-track-section finale-track-section" id="contact" data-track="contact">
+      
+      <div class="cinematic-sticky-stage finale-stage">
+
+        <!-- Ambient Atmosphere Layer -->
+        <div class="inner-atmosphere-layer">
+          <div class="ambient-visual-circle orb-amber" id="contactOrb1"></div>
+          <div class="ambient-visual-circle orb-leaf" id="contactOrb2"></div>
+        </div>
+
+        <div class="scenes-3d-wrapper" id="contactScenes">
+          <!-- CONTACT (Bottle RIGHT -> Content LEFT) -->
+          <article class="cinematic-scene-card active finale-card" data-scene="0">
+            <div class="scene-content-box finale-content-box finale-align-left">
+              <span class="finale-eyebrow">THE FINAL SCENE</span>
+              <h2 class="finale-headline">
+                ORAVEL<br>
+                <span>APPLE JUICE</span>
+              </h2>
+              <div class="editorial-rule-left"></div>
+              <p class="finale-tagline">
+                LET'S CONNECT. Discover the definitive benchmark of single-orchard craftsmanship.
+              </p>
+              
+              <div class="final-cta-cluster">
+                <a href="mailto:concierge@oravel.com" class="cta-pill-btn primary-cta">
+                  <span>CONTACT CONCIERGE →</span>
+                </a>
+                <button class="cta-pill-btn secondary-cta" data-scroll-to="home">
+                  <span>RETURN TO TOP ↑</span>
+                </button>
+              </div>
+
+              <!-- Minimal Luxury Footer Integrated Into Final Scene -->
+              <footer class="cinematic-scene-footer">
+                <div class="footer-brand-row">
+                  <img src="logo -(1).png" alt="ORAVEL" class="footer-logo-img" />
+                  <span class="footer-brand-sub">ORCHARD RESERVE • COLD PRESSED</span>
+                </div>
+                <div class="footer-meta-row">
+                  <span>Estate &amp; Pressery: Valais Alpine Valley</span>
+                  <span class="meta-sep">•</span>
+                  <span>Direct: concierge@oravel.com</span>
+                </div>
+                <div class="footer-copy-row">
+                  <span>&copy; 2026 ORAVEL RESERVE. ALL RIGHTS RESERVED.</span>
+                  <span>100% PURE HEIRLOOM COLD PRESSED APPLE JUICE</span>
+                </div>
+              </footer>
+
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
